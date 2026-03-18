@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Shortcut for AI Chat</title>
+  <style>
+    /* ─── Reset & Base ─────────────────────────────── */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      width: 320px;
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+      background: #1a1a2e;
+      color: #e0e0e0;
+      overflow: hidden;
+    }
+
+    /* ─── Header ───────────────────────────────────── */
+    .header {
+      padding: 20px 20px 12px;
+      text-align: center;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    }
+
+    .header h1 {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      background: linear-gradient(135deg, #a78bfa, #60a5fa, #34d399);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .shortcut-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      margin-top: 10px;
+      padding: 6px 14px;
+      background: rgba(167, 139, 250, 0.12);
+      border: 1px solid rgba(167, 139, 250, 0.25);
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #c4b5fd;
+      letter-spacing: 0.5px;
+    }
+
+    .shortcut-badge kbd {
+      display: inline-block;
+      padding: 2px 6px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 12px;
+      color: #e0e0e0;
+      line-height: 1.2;
+    }
+
+    .header-subtitle {
+      margin-top: 10px;
+      font-size: 11px;
+      line-height: 1.5;
+      color: #94a3b8;
+    }
+
+    /* ─── Site List ─────────────────────────────────── */
+    .site-list {
+      padding: 8px 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .site-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 12px;
+      border-radius: 10px;
+      transition: background 0.2s ease;
+    }
+
+    .site-item:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .site-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .site-name {
+      font-size: 13px;
+      font-weight: 500;
+      color: #d1d5db;
+      flex: 1;
+    }
+
+    .site-url {
+      font-size: 11px;
+      color: #6b7280;
+      font-weight: 400;
+    }
+
+    /* Dot colors per site */
+    .dot-kimi      { background: #6366f1; }
+    .dot-doubao    { background: #3b82f6; }
+    .dot-chatgpt   { background: #10b981; }
+    .dot-grok      { background: #f43f5e; }
+    .dot-claude    { background: #f59e0b; }
+    .dot-gemini    { background: #8b5cf6; }
+    .dot-deepseek  { background: #06b6d4; }
+
+    /* ─── Footer ───────────────────────────────────── */
+    .footer {
+      padding: 10px 20px 14px;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .footer p {
+      font-size: 11px;
+      color: #4b5563;
+      line-height: 1.5;
+    }
+
+    .footer a {
+      color: #818cf8;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>One Shortcut for AI Chat</h1>
+    <div class="shortcut-badge">
+      <kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>O</kbd>
+    </div>
+    <p class="header-subtitle">Use one shortcut to start chats across seven major AI assistants, plus <kbd>⌘</kbd> <kbd>K</kbd> search across ChatGPT, Claude, Gemini, and Grok.</p>
+  </div>
+
+  <div class="site-list">
+    <div class="site-item">
+      <span class="site-dot dot-chatgpt"></span>
+      <span class="site-name">ChatGPT</span>
+      <span class="site-url">chatgpt.com</span>
+    </div>
+    <div class="site-item">
+      <span class="site-dot dot-claude"></span>
+      <span class="site-name">Claude</span>
+      <span class="site-url">claude.ai</span>
+    </div>
+    <div class="site-item">
+      <span class="site-dot dot-gemini"></span>
+      <span class="site-name">Gemini</span>
+      <span class="site-url">gemini.google.com</span>
+    </div>
+    <div class="site-item">
+      <span class="site-dot dot-deepseek"></span>
+      <span class="site-name">DeepSeek</span>
+      <span class="site-url">chat.deepseek.com</span>
+    </div>
+    <div class="site-item">
+      <span class="site-dot dot-grok"></span>
+      <span class="site-name">Grok</span>
+      <span class="site-url">grok.com</span>
+    </div>
+    <div class="site-item">
+      <span class="site-dot dot-kimi"></span>
+      <span class="site-name">Kimi</span>
+      <span class="site-url">kimi.com</span>
+    </div>
+    <div class="site-item">
+      <span class="site-dot dot-doubao"></span>
+      <span class="site-name">Doubao (豆包)</span>
+      <span class="site-url">doubao.com</span>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Use <strong>⇧⌘O</strong> for a new chat on supported sites.<br/>
+    Gemini is remapped from <strong>⇧⌘K</strong> to <strong>⌘K</strong> to match ChatGPT, Claude, and Grok.<br/>
+    Customize the new-chat shortcut in <a href="#" id="shortcut-link">chrome://extensions/shortcuts</a></p>
+  </div>
+
+  <script>
+    // Chrome doesn't allow direct navigation to chrome:// URLs,
+    // so we open the shortcuts page via the Chrome API.
+    document.getElementById('shortcut-link').addEventListener('click', (e) => {
+      e.preventDefault();
+      chrome.tabs.create({ url: 'chrome://extensions/shortcuts' });
+    });
+  </script>
+</body>
+</html>
