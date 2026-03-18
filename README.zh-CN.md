@@ -33,3 +33,11 @@
 - 搜索对话在 ChatGPT、Claude、Gemini 和 Grok 中统一使用 `Command+K` / `Ctrl+K`。
 - DeepSeek、Kimi 和 Doubao（豆包）暂不支持搜索对话。
 - “新建对话”快捷键可以在 `chrome://extensions/shortcuts` 中修改。
+
+## License
+
+本项目采用 MIT License。详情见 [LICENSE](./LICENSE)。
+
+## 仓库地址
+
+GitHub：[algorirhy/one_ai_shortcut](https://github.com/algorirhy/one_ai_shortcut)

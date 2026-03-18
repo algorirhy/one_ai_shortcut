@@ -33,3 +33,11 @@ A lightweight Chrome extension that unifies shortcuts across major AI assistants
 - Search chats uses `Command+K` / `Ctrl+K` on ChatGPT, Claude, Gemini, and Grok.
 - DeepSeek, Kimi, and Doubao (豆包) do not support chat search yet.
 - The new-chat shortcut can be changed in `chrome://extensions/shortcuts`.
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
+
+## Repository
+
+GitHub: [algorirhy/one_ai_shortcut](https://github.com/algorirhy/one_ai_shortcut)
